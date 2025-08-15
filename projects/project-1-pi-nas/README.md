@@ -3,6 +3,20 @@ description: >-
   This project involves setting up a NAS with a Raspberry PI 5 running OMV
   allowing users on the network to store their data.
 icon: pie
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Project 1 - PI NAS

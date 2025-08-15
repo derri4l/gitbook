@@ -7,7 +7,7 @@ icon: globe
 
 ### Overview
 
-This lab simulates the core of a small enterprise network. The goal is to practice networking technologies such as inter-VLAN routing and EtherChanneling.
+This lab simulates the core of a small enterprise network. The goal is to practice networking technologies such as inter-VLAN routing, etherChanneling, etc.
 
 ### Hardware
 
