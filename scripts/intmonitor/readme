@@ -1,0 +1,45 @@
+# Interface State Change Monitor
+This script monitors network interface status changes on OPNsense/FreeBSD systems and sends Discord alerts when a state change is detected. It is designed to run under cron and only sends notifications when there is a change.
+
+## Features
+- Monitors interface up/down status
+- Compares current state with previous state stored in a file
+- Sends Discord notifications when a change is detected
+
+## Prerequisites
+- A Unix-like environment (OPNsense/FreeBSD) with `ifconfig`, `grep`, `sed`, and `curl` installed.
+- A valid Discord webhook URL. Update the `WEBHOOK_URL` variable in the script with your Discord webhook.
+- A designated file for storing interface statuses. Set the `STATUS_FILE` variable to a valid writable path.
+
+## Configuration
+1. **Set Discord Webhook URL**: 
+   Replace the empty string in the variable `WEBHOOK_URL` with your Discord webhook URL.
+
+2. **Set Status File Path**:
+   Specify a full path for `STATUS_FILE` where the script can read/write the last known states.
+
+3. **Timezone**:
+   Adjust the `TZ_ZONE` variable if needed for your system's timezone (default is set to `America/Chicago`).
+
+## Usage
+- **Run Manually**: You can execute the script manually to check interfaces:
+  ```sh
+  ./int_monitor
+  ```
+
+- **Run via Cron**: Schedule the script to run periodically. For example, add the following line to your crontab:
+  ```cron
+  */5 * * * * /path/to/int_monitor
+  ```
+
+## How It Works
+- The script retrieves the current state of each network interface using `ifconfig`.
+- It then compares each interface's state with the previously recorded state in `STATUS_FILE`.
+- If a state change is detected, the script updates the status file and sends an alert to your configured Discord channel.
+
+## Troubleshooting
+- **No Alerts**: Ensure the webhook URL and status file path are set correctly.
+- **Permissions**: Verify that the script has execute permissions and that the status file is writable.
+- **Dependencies**: Confirm that all required commands (`ifconfig`, `grep`, `sed`, and `curl`) are available on your system.
+
+
