@@ -1,0 +1,113 @@
+---
+description: Interface planning, Device configuration, Trunk port setup, Etherchannel
+icon: globe
+---
+
+# Day 1
+
+
+
+### Topology
+
+Before starting, I sketched my network layout using draw.io. I planned the VLANs, trunk ports, and assigned static IP addresses for sub-interfaces.
+
+
+
+### Initial Device Setup
+
+Each device had to be reset and had almost the same basic configuration. Each was configured with a hostname, console and VTY login, ssh access, and other interface settings
+
+{% code title="sample basic config" %}
+```xml
+ hostname SW1 
+ enable secret cisco123
+ 
+ line con 0 
+ password cisco123 
+ login
+ 
+ line vty 0 4 
+ password vtypass 
+ login 
+ transport input ssh 
+ 
+ ip domain-name lab.com
+  crypto key generate rsa
+  
+copy run start 
+```
+{% endcode %}
+
+{% hint style="info" %}
+This is a partial config. I will post full startup-config in the media page for this project
+{% endhint %}
+
+### VLANs and IP Planning&#x20;
+
+After basic the basic configuration, I went to make a table of static IPs and VLANs.
+
+| VLANs | Name    | Subnet          | Sub-interface |
+| ----- | ------- | --------------- | ------------- |
+| 10    | HR      | 192.168.10.0/24 | G0/1.10       |
+| 20    | IT      | 192.168.20.0/24 | G0/1.20       |
+| 30    | Guests  | 192.168.30.0/24 | G0/1.30       |
+| 50    | MGMT    | 192.168.50.1/24 | G0/1.50       |
+| WAN   | Uplink  | 10.99.40.0/24   | G0/0          |
+| 60    | DMZ     | 192.168.60.0/24 | G0/1.60       |
+
+{% code title="router sub-int setup" %}
+```xml
+conf t 
+int g0/1
+no shutdown
+
+int g0/1.10
+encapsulation dot1q 
+ip add 192.168.10.1 255.255.255.0
+description HR 
+
+int g0/1.20
+encapsulation dot1q 
+ip add 192.168.20.1 255.255.255.0
+description IT 
+
+int g0/1.30
+encapsulation dot1q 
+ip add 192.168.30.1 255.255.255.0
+description GUESTS
+
+int g0/1.50
+encapsulation dot1q
+ip add 192.168.50.1 255.255.255.0
+description MGMT
+
+ip g0/1.60
+encapsulation dot1q
+ip add 192.168.60.1 255.255.255.0
+description DMZ
+
+```
+{% endcode %}
+
+Next was setting up the trunk from the switch 1 to the router&#x20;
+
+{% code title="SW1 trunk to R1 setup" %}
+```
+int g1/0/48
+switchport trunk encapsulation dot1q 
+switchport mode trunk 
+switchport trunk allowed vlan 10,20,30,50,60
+description trunk to G0/1
+no shut
+```
+{% endcode %}
+
+Next up was setting up the LACP bundle for both switches. I bundled port 1-4 on both switches into port channel 1.
+
+{% code title="sw1 and 2 LACP setup" %}
+```
+int range g1/0/1 -4 
+switchport mode trunk 
+channel-group 1 mode active 
+```
+{% endcode %}
