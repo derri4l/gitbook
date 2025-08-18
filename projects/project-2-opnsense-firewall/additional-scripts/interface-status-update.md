@@ -140,3 +140,11 @@ done
 ```
 
 </details>
+
+<details>
+
+<summary>media</summary>
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-18 012137.png" alt=""><figcaption><p>manuallly turned off vlan40 and tailscale, snd theb turned vlan20 back up</p></figcaption></figure>
+
+</details>
