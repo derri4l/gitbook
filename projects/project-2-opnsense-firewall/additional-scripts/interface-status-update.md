@@ -145,6 +145,6 @@ done
 
 <summary>media</summary>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-18 012137.png" alt=""><figcaption><p>manuallly turned off vlan40 and tailscale, and then turned vlan20 back up</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-18 012137 (1).png" alt=""><figcaption><p>manuallly turned off vlan40 and tailscale, and then turned vlan20 back up</p></figcaption></figure>
 
 </details>
