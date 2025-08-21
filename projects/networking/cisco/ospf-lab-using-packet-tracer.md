@@ -1,6 +1,7 @@
 ---
 description: documentation coming soon...
+icon: ballot
 ---
 
-# OSPF Lab
+# OSPF Lab using Packet Tracer
 

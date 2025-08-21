@@ -12,7 +12,7 @@
     * [CISCO](projects/networking/cisco/README.md)
       * [Physical Lab #1](projects/networking/cisco/physical-lab-1/README.md)
         * [Media](projects/networking/cisco/physical-lab-1/media.md)
-      * [OSPF Lab](projects/networking/cisco/ospf-lab.md)
+      * [OSPF Lab using Packet Tracer](projects/networking/cisco/ospf-lab-using-packet-tracer.md)
     * [OPNSENSE](projects/networking/opnsense/README.md)
       * [Part 1- VLANs](projects/networking/opnsense/part-1-vlans.md)
       * [Part 2 - Firewall setup](projects/networking/opnsense/part-2-firewall-setup.md)

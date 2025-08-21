@@ -1,8 +1,8 @@
 ---
-icon: globe
+icon: router
 ---
 
-# Cisco Networking Lab #1
+# Physical Lab #1
 
 ### _Overview_
 

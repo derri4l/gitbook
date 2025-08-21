@@ -1,6 +1,6 @@
 ---
 description: Screenshots/pictures for project 3
-icon: globe
+icon: router
 ---
 
 # Media
