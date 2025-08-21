@@ -10,7 +10,6 @@
   * [Networking Projects](projects/networking-projects/README.md)
     * [CISCO LAB](projects/networking-projects/cisco-lab/README.md)
       * [Day 1](projects/networking-projects/cisco-lab/day-1.md)
-      * [Day 2](projects/networking-projects/cisco-lab/day-2.md)
       * [Day 3](projects/networking-projects/cisco-lab/day-3.md)
       * [Media](projects/networking-projects/cisco-lab/media.md)
     * [OPNSENSE](projects/networking-projects/opnsense/README.md)
