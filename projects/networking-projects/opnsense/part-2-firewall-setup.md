@@ -19,9 +19,9 @@ What type of aliases did i use?&#x20;
 * **Network aliases:** Subnets or management IPs
 * **Port aliases:** Grouped services like SSH, HTTPS
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt="" width="421"><figcaption><p>adding IPs to the admin alias group</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt="" width="421"><figcaption><p>adding IPs to the admin alias group</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt="" width="435"><figcaption><p>adding ports to the ports alias group</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt="" width="435"><figcaption><p>adding ports to the ports alias group</p></figcaption></figure>
 
 
 

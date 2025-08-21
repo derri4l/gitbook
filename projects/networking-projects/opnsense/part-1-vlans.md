@@ -13,9 +13,9 @@ Location: Interfaces → Devices&#x20;
 
 I began by setting up devices for each VLAN, assigning each to its parent interface (in this case, my LAN interface ue0), and specifying a VLAN tag.
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2025-06-21 12-24-06 (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot from 2025-06-21 12-24-06 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption><p>VLAN devices list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption><p>VLAN devices list</p></figcaption></figure>
 
 #### Assignments
 
@@ -25,7 +25,7 @@ Location: Interfaces → Assignments&#x20;
 
 The next step was to make assignments for each of the devices&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2025-06-21 12-32-43 (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot from 2025-06-21 12-32-43 (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
