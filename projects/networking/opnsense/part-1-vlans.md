@@ -5,7 +5,7 @@ icon: block-brick-fire
 
 # Part 1- VLANs
 
-#### Devices
+### Devices
 
 {% hint style="info" %}
 Location: Interfaces → Devices&#x20;
@@ -17,7 +17,7 @@ I began by setting up devices for each VLAN, assigning each to its parent interf
 
 <figure><img src="../../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption><p>VLAN devices list</p></figcaption></figure>
 
-#### Assignments
+### Assignments
 
 {% hint style="info" %}
 Location: Interfaces → Assignments&#x20;
@@ -29,13 +29,9 @@ The next step was to make assignments for each of the devices&#x20;
 
 
 
-#### Interfaces
-
-
+### Interfaces
 
 Now that our VLANs are assigned, the next step is to configure each VLAN according to preference. Below is a sample configuration for my VLAN interfaces, each featuring a unique tagged sub-interface on the primary LAN device.&#x20;
-
-
 
 {% code title="configs/network/vlan_interfaces.conf" %}
 ```sh

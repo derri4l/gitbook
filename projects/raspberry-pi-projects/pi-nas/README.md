@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Project 1 - PI NAS
+# PI NAS
 
 ### What I'm I building?
 
@@ -36,15 +36,11 @@ This project involved setting up a Network-Attached Storage (NAS) with a Raspber
 * MicroSD card&#x20;
 * Power Cable
 
-
-
 ### Putting it all together&#x20;
 
 * Assembled the NVMe expansion board and connected it with the PI.&#x20;
 * Installed a headless version of Raspberry OS. &#x20;
-* Installed OMV (OpenMediaVault) on top of Raspberry OS .&#x20;
-
-
+* Installed OMV (OpenMediaVault) on top of Raspberry OS.
 
 {% hint style="info" %}
 All pictures of the NAS is in the Media page for this project
