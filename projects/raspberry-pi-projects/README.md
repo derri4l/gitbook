@@ -21,5 +21,5 @@ layout:
 
 <figure><img src="../../.gitbook/assets/gif.gif" alt="" width="359"><figcaption></figcaption></figure>
 
-A collection of hands-on builds, experiments, and tinkering with Raspberry Pi, from fun gadgets to serious learning projects
+A collection of  builds, experiments, and tinkering with Raspberry Pi, from fun gadgets to serious learning projects
 

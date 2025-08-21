@@ -2,26 +2,15 @@
 icon: block-brick-fire
 ---
 
-# Project 2 - OPNsense FIREWALL SETUP
+# OPNSENSE
 
-### Overview&#x20;
+### _Overview_&#x20;
 
-This project showcases how I implemented OPNsense firewall in my Homelab. The goal is to simulate a firewall deployment for a basic homelab with strict Firewall rules, VLAN segmentation, User access control.&#x20;
+In this section, I'll discuss how I implemented OPNsense a firewall in my homelab. I'm actively exploring additional features and technologies that can integrate with OPNsense, aiming to broaden its functionality and improve overall network performance/security.
 
 
 
-### Hardware
+### _Hardware_
 
 * Intel NUC with OPNsense flashed on it
 
-
-
-### Objectives
-
-* Initial OPNsense setup
-* Create VLANs based on roles and traffic type
-* Implement firewall rules
-* Harden acces with custom users, ACLs
-* Deploy Tailscale and exit node
-* Automate configurtion backups
-* Enable local logging

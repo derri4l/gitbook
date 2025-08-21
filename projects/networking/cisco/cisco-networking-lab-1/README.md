@@ -1,11 +1,20 @@
 ---
-description: Interface planning, Device configuration, Trunk port setup, Etherchannel
 icon: globe
 ---
 
-# Untitled
+# Cisco Networking Lab #1
 
-### Initial Device Setup
+### _Overview_
+
+This lab simulates the basics of a small enterprise like network. The goal is to practice networking technologies such as topology planning, inter-VLAN routing, etherChanneling, etc.
+
+### _Hardware_
+
+* Cisco switch 3750 48 Port (SW1)
+* Cisco Switch 3750 24 Port (SW2)
+* Cisco Router 2911 (R1)
+
+### _Initial Device Setup_
 
 Each device had to be reset and had almost the same basic configuration. Each was configured with a hostname, console and VTY login, SSH access, and other interface settings
 
@@ -34,7 +43,7 @@ copy run start
 This is a partial config. I will post full startup-config in the media page for this project
 {% endhint %}
 
-### VLANs and IP Planning&#x20;
+### _VLANs and IP Planning_&#x20;
 
 After basic the basic configuration, I went to make a table of static IPs and VLANs.
 
@@ -106,7 +115,7 @@ channel-group 1 mode active
 
 
 
-### Port assignments&#x20;
+### _Port assignments_&#x20;
 
 &#x20;Next I started with assigning ports to their respective VLANs. On SW1 I excluded g1/0/47 as it would be the port connected to the server on the DMZ side.&#x20;
 
