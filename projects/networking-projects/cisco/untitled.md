@@ -3,17 +3,11 @@ description: Interface planning, Device configuration, Trunk port setup, Etherch
 icon: globe
 ---
 
-# Day 1
-
-### Topology
-
-Before starting, I sketched my network layout using draw.io. I planned the VLANs, trunk ports, and assigned static IP addresses for sub-interfaces.
-
-
+# Untitled
 
 ### Initial Device Setup
 
-Each device had to be reset and had almost the same basic configuration. Each was configured with a hostname, console and VTY login, ssh access, and other interface settings
+Each device had to be reset and had almost the same basic configuration. Each was configured with a hostname, console and VTY login, SSH access, and other interface settings
 
 {% code title="sample basic config" %}
 ```xml
@@ -112,11 +106,9 @@ channel-group 1 mode active
 
 
 
-## Day 2
-
 ### Port assignments&#x20;
 
-On day 2 I started with assigning ports to their respective VLANs. On SW1 I excluded g1/0/47 as it would be the port connected to the server on the DMZ side.&#x20;
+&#x20;Next I started with assigning ports to their respective VLANs. On SW1 I excluded g1/0/47 as it would be the port connected to the server on the DMZ side.&#x20;
 
 {% code title="adding ports on vlan 10" %}
 ```
@@ -176,9 +168,7 @@ ip dhcp excluded-address 192.168.30.1 192.158.30.10
 
 
 
-## Day 3
-
-On Day 3 I started out with reserving an IP and assigning a port to the AP on the guests VLAN. I chose 192.168.30.10 for the AP on port 35.
+&#x20;Next I started out with reserving an IP and assigning a port to the AP on the guests VLAN. I chose 192.168.30.10 for the AP on port 35.
 
 ```
 ip dhcp pool vlan30
