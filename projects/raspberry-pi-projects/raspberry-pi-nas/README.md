@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# PI NAS
+# Raspberry PI NAS
 
 ### _What I'm I building?_
 
@@ -42,9 +42,11 @@ This project involved setting up a Network-Attached Storage (NAS) with a Raspber
 * Installed a headless version of Raspberry OS. &#x20;
 * Installed OMV (OpenMediaVault) on top of Raspberry OS.
 
+{% hint style="info" %}
+Pictures of the NAS is on the Media page
+{% endhint %}
 
-
-### Storage/user access
+### _Storage/user access_
 
 * Implemented RAID 5 using the 3 NVMe SSDs and created and mounted the RAID volume via the OMV GUI.
 
@@ -69,7 +71,7 @@ This project involved setting up a Network-Attached Storage (NAS) with a Raspber
 
 
 
-### Security
+### _Security_
 
 * Switched ssh and dahsboard console ports from default (8443, 22) to custom, also disabled ssh password login, root login and allowed login via keys only.
 
@@ -80,3 +82,4 @@ This project involved setting up a Network-Attached Storage (NAS) with a Raspber
 * Installed and configured Fail2Ban (this prevents brute-force attacks) and Whitelisted all trusted IPS in the jail.
 
 <figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FjfOtWbbHBfB4uoeky0eg_2Fimage.avif" alt=""><figcaption></figcaption></figure>
+

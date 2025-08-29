@@ -5,7 +5,7 @@ icon: block-brick-fire
 
 # Part 2 - Firewall setup
 
-### Aliases&#x20;
+### _Aliases_&#x20;
 
 {% hint style="info" %}
 Location: Firewall → Aliases (depends on firmware)
@@ -25,7 +25,7 @@ What type of aliases did i use?&#x20;
 
 
 
-### Firewall Rules
+### _Firewall Rules_
 
 {% hint style="info" %}
 Firewall → Rules → Pick the interface you want to configure
@@ -71,7 +71,7 @@ log: no
 
 
 
-### Logging
+### _Logging_
 
 {% hint style="info" %}
 **Firewall → Log Files → Live View:** for real-time analysis of traffic

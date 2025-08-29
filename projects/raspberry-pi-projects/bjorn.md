@@ -3,9 +3,9 @@ hidden: true
 icon: swords
 ---
 
-# BJORN
+# Bjorn
 
-### Overview&#x20;
+### _Overview_&#x20;
 
 In this project I deployed Bjorn, an open-source vulnerability scanner that runs on a pi zero and even other small boards out there. I have been a fan of this project since I found out about it because not only is it a low-powered cheap solution but its also fully customizable since it is built on python and Nmap.
 
@@ -23,7 +23,7 @@ This repo goes through the entire setup and has some useful scripts if you choos
 
 {% @github-files/github-code-block url="https://github.com/infinition/Bjorn" %}
 
-### Hardware
+### _Hardware_
 
 * Pi Zero with headers
 * Waveshare screen for pi zero
