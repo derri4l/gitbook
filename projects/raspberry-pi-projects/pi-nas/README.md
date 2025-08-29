@@ -42,6 +42,41 @@ This project involved setting up a Network-Attached Storage (NAS) with a Raspber
 * Installed a headless version of Raspberry OS. &#x20;
 * Installed OMV (OpenMediaVault) on top of Raspberry OS.
 
-{% hint style="info" %}
-All pictures of the NAS is in the Media page for this project
-{% endhint %}
+
+
+### Storage/user access
+
+* Implemented RAID 5 using the 3 NVMe SSDs and created and mounted the RAID volume via the OMV GUI.
+
+<figure><img src="../../../.gitbook/assets/IMG_0142.jpeg" alt=""><figcaption><p>RAID configuration</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FBeatTOA9Npjt0oumcTeO_2Fimage.avif" alt=""><figcaption><p>Disk health</p></figcaption></figure>
+
+
+
+* Created users and provisioned them, I also made shares and assigned what user has access to the shares.
+*
+
+    <figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FBxPwVJ9VfnTHdPLsloHd_2FScreenshot_202025-07-14_20124134.avif" alt=""><figcaption><p>Users and groups</p></figcaption></figure>
+
+
+
+    <figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FMli5kM5eG5A9WgANEvSv_2FScreenshot_202025-07-14_20124558.avif" alt=""><figcaption><p>shared folders </p></figcaption></figure>
+
+
+
+<figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FvRFWLvoM7KpqGQ7nsiUg_2Fimage.avif" alt=""><figcaption><p>permissions for guest shared folder</p></figcaption></figure>
+
+
+
+### Security
+
+* Switched ssh and dahsboard console ports from default (8443, 22) to custom, also disabled ssh password login, root login and allowed login via keys only.
+
+<figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FtKCdLx9Q3zfC5X462rKp_2Fimage.avif" alt=""><figcaption></figcaption></figure>
+
+
+
+* Installed and configured Fail2Ban (this prevents brute-force attacks) and Whitelisted all trusted IPS in the jail.
+
+<figure><img src="../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FjfOtWbbHBfB4uoeky0eg_2Fimage.avif" alt=""><figcaption></figcaption></figure>
