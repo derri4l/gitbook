@@ -18,5 +18,5 @@
       * [Part 4 - User-access](projects/networking/opnsense/part-4-user-access.md)
       * [Additional scripts](projects/networking/opnsense/additional-scripts/README.md)
         * [interface status update](projects/networking/opnsense/additional-scripts/interface-status-update.md)
-  * [Security/SOC](projects/security-soc.md)
+  * [SECURITY/SOC](projects/security-soc.md)
     * [CVE Detection and Report](projects/security-soc/cve-detection-and-report.md)
