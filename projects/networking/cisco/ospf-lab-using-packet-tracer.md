@@ -1,6 +1,5 @@
 ---
 description: documentation coming soon...
-hidden: true
 icon: ballot
 ---
 

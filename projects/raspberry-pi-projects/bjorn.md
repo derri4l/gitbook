@@ -1,5 +1,4 @@
 ---
-description: documentation coming soon...
 hidden: true
 icon: swords
 ---
@@ -30,6 +29,12 @@ This repo goes through the entire setup and has some useful scripts if you choos
 * Waveshare screen for pi zero
 * Micro-usb cable&#x20;
 * Micro-sd card
+
+
+
+### Setup
+
+
 
 
 

@@ -15,7 +15,7 @@ Setting up aliases is optional but very helpful in OPNsense. In this project ali
 
 What type of aliases did i use?&#x20;
 
-* **Host aliases:** Groups of IPs for admin or service devices
+* **Host aliases:** Groups of IPs for admin or service devices ( you can use other types like mac addresses, subnets etc.)
 * **Network aliases:** Subnets or management IPs
 * **Port aliases:** Grouped services like SSH, HTTPS
 
