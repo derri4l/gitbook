@@ -19,4 +19,4 @@
       * [Additional scripts](categories/networking/opnsense/additional-scripts/README.md)
         * [interface status update](categories/networking/opnsense/additional-scripts/interface-status-update.md)
   * [SECURITY/SOC](categories/security-soc/README.md)
-    * [CVE Detection and Report](categories/security-soc/cve-detection-and-report.md)
+    * [CVE Detection and Report #1](categories/security-soc/cve-detection-and-report-1.md)
