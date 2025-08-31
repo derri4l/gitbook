@@ -5,6 +5,8 @@
   * [RASPBERRY PI PROJECTS](categories/raspberry-pi-projects/README.md)
     * [Pi NAS](categories/raspberry-pi-projects/pi-nas/README.md)
       * [Media](categories/raspberry-pi-projects/pi-nas/media.md)
+    * [Pi NAS](categories/raspberry-pi-projects/pi-nas-1/README.md)
+      * [Media](categories/raspberry-pi-projects/pi-nas-1/media.md)
     * [Bjorn](categories/raspberry-pi-projects/bjorn.md)
   * [NETWORKING](categories/networking/README.md)
     * [Cisco](categories/networking/cisco/README.md)

@@ -1,7 +1,4 @@
 ---
-description: >-
-  This project involves setting up a NAS with a Raspberry PI 5 running OMV
-  allowing users on the network to store their data.
 icon: pie
 layout:
   width: default
@@ -19,7 +16,7 @@ layout:
     visible: true
 ---
 
-# Raspberry PI NAS
+# Pi NAS
 
 ### _What I'm I building?_
 
@@ -47,6 +44,8 @@ Pictures of the NAS is on the Media page
 {% endhint %}
 
 ### _Storage/user access_
+
+
 
 * Implemented RAID 5 using the 3 NVMe SSDs and created and mounted the RAID volume via the OMV GUI.
 
