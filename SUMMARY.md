@@ -17,6 +17,5 @@
       * [Part 4 - User-access](categories/networking/opnsense/part-4-user-access.md)
       * [Additional scripts](categories/networking/opnsense/additional-scripts/README.md)
         * [interface status update](categories/networking/opnsense/additional-scripts/interface-status-update.md)
-    * [OPNsense on Proxmox](categories/networking/opnsense-on-proxmox.md)
   * [SECURITY/SOC](categories/security-soc/README.md)
     * [#1. CVE Detection and Report](categories/security-soc/1.-cve-detection-and-report.md)
