@@ -7,7 +7,7 @@
     * [#2. Bjorn](categories/raspberry-pi-projects/2.-bjorn.md)
   * [NETWORKING](categories/networking/README.md)
     * [Cisco](categories/networking/cisco/README.md)
-      * [#1. Physical Lab #1](categories/networking/cisco/1.-physical-lab-1.md)
+      * [#1. Physical Lab #1](categories/networking/cisco/1.-physical-lab-1/README.md)
       * [#2. OSPF Lab using Packet Tracer](categories/networking/cisco/2.-ospf-lab-using-packet-tracer.md)
     * [OPNsense](categories/networking/opnsense/README.md)
       * [Part 1- VLANs](categories/networking/opnsense/part-1-vlans.md)

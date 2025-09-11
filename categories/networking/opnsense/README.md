@@ -2,7 +2,7 @@
 icon: block-brick-fire
 ---
 
-# OPNSENSE
+# OPNsense
 
 ### _Overview_&#x20;
 
@@ -10,7 +10,5 @@ In this section, I'll discuss how I implemented OPNsense a firewall in my homela
 
 
 
-### _Hardware_
 
-* Intel NUC with OPNsense flashed on it
 
