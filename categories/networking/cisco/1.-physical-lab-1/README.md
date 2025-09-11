@@ -2,7 +2,7 @@
 icon: router
 ---
 
-# Physical Lab #1
+# #1. Physical Lab #1
 
 ### _Overview_
 
@@ -90,6 +90,8 @@ description DMZ
 ```
 {% endcode %}
 
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2Fy6mcsipxpbiaHzFKr9GN_2Fimage.avif" alt=""><figcaption><p>show vlan brief (SW1)</p></figcaption></figure>
+
 Next was setting up the trunk from the switch 1 to the router&#x20;
 
 {% code title="SW1 trunk to R1 setup" %}
@@ -103,6 +105,8 @@ no shut
 ```
 {% endcode %}
 
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FWKDzUbaG4etTXseONfu6_2Fimage.avif" alt=""><figcaption><p>show trunk ports and vlans allowed (SW1)</p></figcaption></figure>
+
 Next up was setting up the LACP bundle for both switches. I bundled port 1-4 on both switches into port channel 1.
 
 {% code title="sw1 and 2 LACP setup" %}
@@ -113,7 +117,7 @@ channel-group 1 mode active
 ```
 {% endcode %}
 
-
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FGMikdTfprwEGnU1xUymV_2Fimage.avif" alt=""><figcaption><p>etherchannel summary (SW1)</p></figcaption></figure>
 
 ### _Port assignments_&#x20;
 
@@ -145,7 +149,7 @@ switchport port-security mac-address sticky
 ```
 {% endcode %}
 
-Next thing i did on the switches were to enable ACL restrictions. This makes it so a specific subnet or IP can access services like SSH on the devices themselves.&#x20;
+Next, i did on the switches were to enable ACL restrictions. This makes it so a specific subnet or IP can access services like SSH on the devices themselves.&#x20;
 
 ```
 ip access-lists standard MGMT-ACL
@@ -196,3 +200,12 @@ ip nat outside
 access-list 1 permit 192.168.30.0 0.0.0.255
 ```
 
+<h4 align="center">Extras</h4>
+
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FBWsjXEv4oIBUp8ryd5Ea_2Fimage.avif" alt=""><figcaption><p>ip route (R1)</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FZWbL89iAONTd1kYEIBXS_2Fimage.avif" alt=""><figcaption><p>ping test</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2FKimbNxhoig7FmwDxG9tf_2Fimage.avif" alt=""><figcaption><p>ping test from AP</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F5CX8xiUREasczFLSoLXp_2Fuploads_2Fw8yvwX7wUPq9i99pIFdg_2Fimage.avif" alt="" width="375"><figcaption><p>physical lab</p></figcaption></figure>
