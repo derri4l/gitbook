@@ -18,4 +18,4 @@
         * [interface status update](categories/networking/opnsense/additional-scripts/interface-status-update.md)
   * [SECURITY/SOC](categories/security-soc/README.md)
     * [#1. CVE Detection and Report](categories/security-soc/1.-cve-detection-and-report.md)
-  * [AI/AUTOMATION](categories/ai-automation.md)
+  * [AI & AUTOMATION](categories/ai-and-automation.md)
