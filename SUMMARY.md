@@ -18,4 +18,5 @@
         * [interface status update](categories/networking/opnsense/additional-scripts/interface-status-update.md)
   * [SECURITY/SOC](categories/security-soc/README.md)
     * [#1. CVE Detection and Report](categories/security-soc/1.-cve-detection-and-report.md)
-  * [AI & AUTOMATION](categories/ai-and-automation.md)
+  * [AI & AUTOMATION](categories/ai-and-automation/README.md)
+    * [DailyFeed (n8n workflow)](categories/ai-and-automation/dailyfeed-n8n-workflow.md)

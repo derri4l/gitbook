@@ -2,5 +2,5 @@
 icon: brain-circuit
 ---
 
-# AI/AUTOMATION
+# AI & AUTOMATION
 
