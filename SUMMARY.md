@@ -20,3 +20,4 @@
     * [#1. CVE Detection and Report](categories/security-soc/1.-cve-detection-and-report.md)
   * [AI & AUTOMATION](categories/ai-and-automation/README.md)
     * [#1. DailyFeed (n8n workflow)](categories/ai-and-automation/1.-dailyfeed-n8n-workflow.md)
+    * [#2. Job-scraper (n8n workflow)](categories/ai-and-automation/2.-job-scraper-n8n-workflow.md)
