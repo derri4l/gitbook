@@ -17,9 +17,9 @@ layout:
     visible: false
 ---
 
-# Raspberry pi projects
+# RASPBERRY PI PROJECTS
 
-<figure><img src="../../.gitbook/assets/gif.gif" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/gif.gif" alt="" width="359"><figcaption></figcaption></figure>
 
 A collection of  builds, experiments, and tinkering with Raspberry Pi, from fun gadgets to serious learning projects
 

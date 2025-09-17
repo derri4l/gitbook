@@ -17,7 +17,7 @@ Location: VPN → Tailscale → Settings
 
 This is a pretty straight foward setup, in OPNsense there is a checkbox for "Advertise Exit Node". Simply enabling it and approving the route on your Tailscale console allows you to use your OPNsense firewall as a exit node.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;But if we had to do this in the terminal;
 
@@ -38,4 +38,4 @@ tailscale status
 
 After advertising and authenticating on your Tailscale console you should be able to select your firewall as an exit node on tailscale.
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Tailscale app with exit node enabled </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Tailscale app with exit node enabled </p></figcaption></figure>
